@@ -7,19 +7,26 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-import React from 'react';
-import Navbar from '../welcome/Navbar';
+import React from "react";
+import Navbar from "../welcome/Navbar";
 
 const Home: React.FC = () => {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col items-center justify-center min-h-[70vh] bg-white px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-[#002C38] mb-4 text-center">
-          Welcome to CodeIn
+      <section className="w-full flex flex-col items-center justify-center min-h-[70vh] bg-[#fffedd] px-4 py-16 text-center">
+        <p className="w-[40%] text-md font-medium tracking-wider text-[#002C38] mb-4 text-center">
+          Software Development Team.
+        </p>
+        <h1 className="w-[40%] text-6xl font-extrabold text-[#006986] mb-4 text-center tracking-wide">
+          Design and develop websites, apps, and AI-powered systems that take
+          your business to the next level.
         </h1>
-        <p className="text-lg md:text-xl text-gray-700 mb-8 text-center max-w-2xl">
-          CodeIn is your trusted partner for modern software solutions. We specialize in web development, cloud integration, and digital transformation to help your business grow and succeed in the digital era.
+        <p className="w-[60%] text-lg md:text-xl text-gray-700 mb-8 text-center">
+          CodeIn isn’t another agency with polished slides and endless calls.
+          We’re builders. We specialize in web development, cloud integration,
+          and digital transformation that actually helps your business grow—not
+          six months from now, but today.
         </p>
         <a
           href="#contact"
